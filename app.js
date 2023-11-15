@@ -3,10 +3,8 @@ const theme = localStorage.getItem('theme');
 const image = document.querySelector('header img');
 let isOldImage = localStorage.getItem('isOldImage') === 'true';
 
-// Set the initial theme
 theme && document.body.classList.add(theme);
 
-// Set the initial image based on the stored state
 image.src = isOldImage ? 'darkBtn.svg' : 'lightBtn.svg';
 
 themeToggleBtn.addEventListener('click', () => {
@@ -26,7 +24,6 @@ image.addEventListener('click', () => {
     }
     isOldImage = !isOldImage;
 
-    // Save the state of the image to local storage
     localStorage.setItem('isOldImage', isOldImage.toString());
 });
 
