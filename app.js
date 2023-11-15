@@ -32,7 +32,6 @@ image.addEventListener('click', () => {
 
 
 
-
 document.addEventListener("DOMContentLoaded", fetchData);
 
 function fetchData() {
