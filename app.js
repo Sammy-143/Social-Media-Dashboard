@@ -18,9 +18,9 @@ themeToggleBtn.addEventListener('click', () => {
 
 image.addEventListener('click', () => {
     if (isOldImage) {
-        image.src = 'lightBtn.svg';
-    } else {
         image.src = 'darkBtn.svg';
+    } else {
+        image.src = 'lightBtn.svg';
     }
     isOldImage = !isOldImage;
 
