@@ -1,0 +1,97 @@
+{
+    "followersData":[
+        {
+            "platform": "facebook",
+            "handle": "@nathanf",
+            "followersCount": "1987",
+            "arrow": "Path 3",
+            "today": "12 Today"
+           
+        },
+        {
+            "platform": "twitter",
+            "handle": "@nathanf",
+            "followersCount": "1044",
+            "arrow": "Path 3",
+            "today": "99 Today"
+            
+        },
+        {
+            "platform": "instagram",
+            "handle": "@realnathanf",
+            "followersCount": "11K",
+            "arrow": "Path 3",
+            "today": "1099 Today"
+        },
+        {
+            "platform": "youtube",
+            "handle": "@Nathan F.",
+            "followersCount": "8239",
+            "arrow": "Path 3 (1)",
+            "today": "144 Today"
+           
+        }
+    ],
+
+    "overviewData":[
+        {
+            "title":"Page Views",
+            "platform": "facebook",
+            "value": "87",
+            "arrow": "Path 3",
+            "percentage": "3"
+        },
+        {
+            "title":"Likes",
+            "platform": "facebook",
+            "value": "52",
+            "arrow": "Path 3 (1)",
+            "percentage": "2"
+        },
+        {
+            "title":"Likes",
+            "platform": "instagram",
+            "value": "5462",
+            "arrow": "Path 3",
+            "percentage": "2257"
+        },
+        {
+            "title":"Profile Views",
+            "platform": "instagram",
+            "value": "52K",
+            "arrow": "Path 3",
+            "percentage": "1357"
+            
+        },
+        {
+            "title":"Retweets",
+            "platform": "twitter",
+            "value": "117",
+            "arrow": "Path 3",
+            "percentage": "303"
+          
+        },
+        {
+            "title":"Likes",
+            "platform": "twitter",
+            "value": "507",
+            "arrow": "Path 3",
+            "percentage": "553"
+            
+        },
+        {
+            "title":"Likes",
+            "platform": "youtube",
+            "value": "107",
+            "arrow": "Path 3 (1)",
+            "percentage": "19"
+        },
+        {
+            "title":"Total Views",
+            "platform": "youtube",
+            "value": "1407",
+            "arrow": "Path 3 (1)",
+            "percentage": "12"
+        }
+    ]
+}
