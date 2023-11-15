@@ -32,8 +32,8 @@ image.addEventListener('click', () => {
 
 
 
-document.addEventListener("DOMContentLoaded", fetchData);
 
+document.addEventListener("DOMContentLoaded", fetchData);
 function fetchData() {
     fetch('data.json')
         .then(response => response.json())
