@@ -27,6 +27,7 @@ body{
     background: var(--primary-clr);
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 header{
     display: flex;
