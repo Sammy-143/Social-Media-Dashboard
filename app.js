@@ -1,22 +1,19 @@
-const themeToggleBtn = document.querySelector('.theme-toggle');
 const theme = localStorage.getItem('theme');
 const image = document.querySelector('header img');
 let isOldImage = localStorage.getItem('isOldImage') === 'true';
 
 theme && document.body.classList.add(theme);
 
+image.src = isOldImage ? 'assets/darkBtn.svg' : 'assets/lightBtn.svg';
 
 
-themeToggleBtn.addEventListener('click', () => {
+image.addEventListener('click', () => {
     document.body.classList.toggle('light');
     if (document.body.classList.contains('light')) {
         localStorage.setItem('theme', 'light');
     } else {
         localStorage.removeItem('theme');
     }
-});
-
-image.addEventListener('click', () => {
     if (isOldImage) {
         image.src = 'assets/lightBtn.svg';
     } else {
