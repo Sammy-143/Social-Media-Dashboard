@@ -1,27 +1,24 @@
+const themeToggleBtn = document.querySelector('.dark-btn');
 const theme = localStorage.getItem('theme');
+const iconSrc = localStorage.getItem('icon');
 const image = document.querySelector('header img');
-let isOldImage = localStorage.getItem('isOldImage') === 'true';
 
 theme && document.body.classList.add(theme);
 
-image.src = isOldImage ? 'assets/darkBtn.svg' : 'assets/lightBtn.svg';
-
+image.src = iconSrc || 'assets/darkBtn.svg';
 
 image.addEventListener('click', () => {
     document.body.classList.toggle('light');
     if (document.body.classList.contains('light')) {
         localStorage.setItem('theme', 'light');
-    } else {
-        localStorage.removeItem('theme');
-    }
-    if (isOldImage) {
         image.src = 'assets/lightBtn.svg';
     } else {
+        localStorage.removeItem('theme');
         image.src = 'assets/darkBtn.svg';
     }
-    isOldImage = !isOldImage;
-
-    localStorage.setItem('isOldImage', isOldImage.toString());
+    
+    
+    localStorage.setItem('icon', image.src);
 });
 
 
