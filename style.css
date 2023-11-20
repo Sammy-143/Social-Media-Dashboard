@@ -168,15 +168,16 @@ button{
     margin-left: 8rem;
     color: var(--tertiary-clr);
     font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
+  font-weight: 700;
     line-height: normal;
+
 }
 .grid-container2{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 2rem;
     margin: 0 8rem;
+
 }
 .card2:nth-child(3):hover{
     cursor: pointer;
@@ -236,16 +237,10 @@ button{
 }
 
 /* MEDIA QUERY PHONE */
-@media (min-width: 320px) and (max-width: 767px){
+@media (min-width: 320px) and (max-width: 450px){
     body{
-        position: relative;
-        background: var(--primary-clr);
         width: 100%;
         height: 100vh;
-        overflow-x: hidden;
-    }
-    header{
-        height: 14.6875rem;
     }
     .top{
         flex-direction: column;
@@ -265,36 +260,41 @@ button{
     }
     section{
         width: 80%;
+        height: 100rem;
+        position: relative;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-left: 20%;
-    }
+        left: 10%;
+        top: -3rem;
+  }
     .grid-container1{
         position: absolute;
-        top: 12rem;
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
+        top: 0;
     }
+
     .card{
-        width: 80%;
+        width: 100%;
         height: 13.5rem;
     }
     .overview{
-        margin-left: 0;
         display: flex;
-        width: 100%;
+        flex-direction: column;
         position: absolute;
-        top: 65rem;
+        top: 52rem;
+        left: -8rem;
     }
     .grid-container2{
         position: absolute;
-        top: 76rem;
+        top: 64rem;
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
     }
     .card2{
-        width: 80%;
+        width: 100%;
     }
 }
 @media (max-width:320px){
