@@ -5,7 +5,7 @@ let isOldImage = localStorage.getItem('isOldImage') === 'true';
 
 theme && document.body.classList.add(theme);
 
-image.src = isOldImage ? 'darkBtn.svg' : 'lightBtn.svg';
+image.src = isOldImage ? 'assets/darkBtn.svg' : 'assets/lightBtn.svg';
 
 themeToggleBtn.addEventListener('click', () => {
     document.body.classList.toggle('light');
@@ -18,9 +18,9 @@ themeToggleBtn.addEventListener('click', () => {
 
 image.addEventListener('click', () => {
     if (isOldImage) {
-        image.src = 'lightBtn.svg';
+        image.src = 'assets/lightBtn.svg';
     } else {
-        image.src = 'darkBtn.svg';
+        image.src = 'assets/darkBtn.svg';
     }
     isOldImage = !isOldImage;
 
