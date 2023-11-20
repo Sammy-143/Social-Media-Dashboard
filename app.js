@@ -5,7 +5,7 @@ let isOldImage = localStorage.getItem('isOldImage') === 'true';
 
 theme && document.body.classList.add(theme);
 
-image.src = isOldImage ? 'assets/darkBtn.svg' : 'assets/lightBtn.svg';
+
 
 themeToggleBtn.addEventListener('click', () => {
     document.body.classList.toggle('light');
